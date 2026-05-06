@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Área Restrita</title>
+</head>
+<body>
+    <h1>{{ mensagem }}</h1>
+    {% if imagem %}
+        <img src="{{ url_for('static', filename=imagem) }}" alt="Cadeado">
+    {% endif %}
+</body>
+</html>
